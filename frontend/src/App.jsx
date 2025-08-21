@@ -6,7 +6,8 @@ import Services from "./pages/Services.jsx";
 import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 
-const API_BASE = "http://127.0.0.1:8000/api";
+// const API_BASE = "http://127.0.0.1:8000/api";
+const API_BASE = "https://mibrahim72.pythonanywhere.com/api"; // Replace with your actual API base URL
 
 function Navbar({ settings }) {
   const navigate = useNavigate();

@@ -160,7 +160,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*c1$f!4@-@$&3ufs9(bix5tc=6_ly5$d33)pers$i0ep&2(ey+'
 
 DEBUG = True  # خليه False في الإنتاج
-ALLOWED_HOSTS = ["*"]  # أو اكتب الدومين بعد ما ترفعه
+ALLOWED_HOSTS = [
+    "mibrahim72.pythonanywhere.com",
+    "127.0.0.1",   # للاختبار المحلي
+    "localhost",
+]  # أو اكتب الدومين بعد ما ترفعه
 
 # -----------------------------
 # Installed Apps
@@ -199,11 +203,11 @@ MIDDLEWARE = [
 # -----------------------------
 # CORS
 # -----------------------------
-CORS_ALLOW_ALL_ORIGINS = True  # للتجربة
-# CORS_ALLOWED_ORIGINS = [
-#     "https://un-borders-frontend.vercel.app",
-#     "http://localhost:3000"
-# ]
+CORS_ALLOWED_ORIGINS = [
+    "https://un-borders.vercel.app",  # عدل على حسب لينك Vercel بتاعك
+    "http://localhost:3000",                   # علشان تشغل React محلي
+]
+
 
 # -----------------------------
 # Static & Media
